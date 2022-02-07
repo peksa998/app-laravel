@@ -15,4 +15,8 @@ class Product extends Model
         'description',
         'price'
     ];
+
+    public function descriptionF() {
+        return $this->belongsTo(Description::class);
+    }
 }
